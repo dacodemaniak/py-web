@@ -1,0 +1,42 @@
+{
+  "name": "py-web",
+  "version": "1.0.0",
+  "description": "Site web de démonstration HTML CSS et TypeScript JQuery",
+  "main": "index.js",
+  "scripts": {
+    "babel": "babel --presets es2015 app.ts -o build/bundle.js",
+    "webpack:dev": "webpack --watch --mode=development",
+    "webpack:prod": "webpack --watch --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacodemaniak/py-web.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript",
+    "JQuery",
+    "TypeScript"
+  ],
+  "author": "Aélion",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dacodemaniak/py-web/issues"
+  },
+  "homepage": "https://github.com/dacodemaniak/py-web#readme",
+  "dependencies": {
+    "typescript": "^3.5.2",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5",
+    "jquery": "^3.4.1",
+  },
+  "devDependencies": {
+    "ts-loader": "^6.0.4",
+    "@types/jquery": "^3.3.27",
+  }
+}
