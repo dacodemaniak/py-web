@@ -25,6 +25,11 @@ contactForm.on(
         otherFields.forEach((field) => {
             if (field.val() == '') {
                 isFormComplete = false;
+            } else {
+                // Let's start with a trim and a length
+                if (field.val().trim().length == 0) {
+                    isFormComplete = false;
+                }
             }
         });
         // Hey button... on t'active ou pas ?
