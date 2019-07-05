@@ -6,6 +6,21 @@
  *  - and so on...
  */
 
+// set an event listener on the form itself...
+// and listen to keyboard events
+const contactForm = $('#contact-form');
+contactForm.on(
+    'keyup',
+    (event) => {
+        console.log('Ok JL, je viens de détecter une touche dans le form');
+    }
+);
+
+
+
+
+
+/*
 // Set an event listener on the name field
 const nameField = $('[name="name"]');
 const nameFieldById = $('#name');
@@ -34,3 +49,4 @@ nameField.on(
         }
     }
 );
+*/
