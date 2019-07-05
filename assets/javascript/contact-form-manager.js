@@ -12,7 +12,27 @@ const contactForm = $('#contact-form');
 contactForm.on(
     'keyup',
     (event) => {
-        console.log('Ok JL, je viens de détecter une touche dans le form');
+        // HTML fields list to check
+        const otherFields = [
+            $('#name'),
+            $('#forname'),
+            $('#email'),
+            $('#object')
+        ];
+
+        let isFormComplete = true;
+
+        otherFields.forEach((field) => {
+            if (field.val() == '') {
+                isFormComplete = false;
+            }
+        });
+        // Hey button... on t'active ou pas ?
+        if (isFormComplete) {
+            $('#send-it').removeAttr('disabled');
+        } else {
+            $('#send-it').attr('disabled', 'disabled');
+        }
     }
 );
 
